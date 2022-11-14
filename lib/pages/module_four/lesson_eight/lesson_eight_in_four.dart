@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:my_library/pages/module_four/lesson_eight/resize_pulse_own.dart';
+import 'package:my_library/pages/module_four/lesson_eight/slide_animation_own.dart';
 
 import 'basic_layout_own.dart';
 
@@ -26,6 +28,20 @@ class _LessonEightInFourState extends State<LessonEightInFour> {
               Navigator.pushNamed(context, BasicLayoutOwn.id);
             },
             child: const Text("BasicLayoutOwn"),
+          ),
+          MaterialButton(
+            color: Colors.black12,
+            onPressed: () {
+              Navigator.pushNamed(context, ResizePulseOwn.id);
+            },
+            child: const Text("ResizePulseOwn"),
+          ),
+          MaterialButton(
+            color: Colors.black12,
+            onPressed: () {
+              Navigator.pushNamed(context, SlideAnimationOwn.id);
+            },
+            child: const Text("SlideAnimationOwn"),
           )
         ],
       ),

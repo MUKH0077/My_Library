@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:my_library/pages/home_page.dart';
 import 'package:my_library/pages/module_four/lesson_eight/basic_layout_own.dart';
 import 'package:my_library/pages/module_four/lesson_eight/lesson_eight_in_four.dart';
+import 'package:my_library/pages/module_four/lesson_eight/resize_pulse_own.dart';
+import 'package:my_library/pages/module_four/lesson_eight/slide_animation_own.dart';
 import 'package:my_library/pages/module_four/lesson_seven/container_decoration_own.dart';
 import 'package:my_library/pages/module_four/lesson_seven/container_gradient_own.dart';
 import 'package:my_library/pages/module_four/lesson_seven/customized_TextField.dart';
@@ -69,6 +71,8 @@ class MyApp extends StatelessWidget {
         TaskSecondOwn.id: (context) => const TaskSecondOwn(),
         LessonEightInFour.id: (context) => const LessonEightInFour(),
         BasicLayoutOwn.id: (context) => const BasicLayoutOwn(),
+        ResizePulseOwn.id: (context) => const ResizePulseOwn(),
+        SlideAnimationOwn.id: (context) => const SlideAnimationOwn(),
       }
     );
   }
