@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:my_library/pages/module_four/lesson_eight/resize_pulse_own.dart';
 import 'package:my_library/pages/module_four/lesson_eight/slide_animation_own.dart';
+import 'package:my_library/pages/module_four/lesson_eight/three_d_flip_own.dart';
 
 import 'basic_layout_own.dart';
+import 'bounce_animation_own.dart';
 
 class LessonEightInFour extends StatefulWidget {
   static const String id = "LessonEightInFour";
@@ -42,7 +44,21 @@ class _LessonEightInFourState extends State<LessonEightInFour> {
               Navigator.pushNamed(context, SlideAnimationOwn.id);
             },
             child: const Text("SlideAnimationOwn"),
-          )
+          ),
+          MaterialButton(
+            color: Colors.black12,
+            onPressed: () {
+              Navigator.pushNamed(context, BounceAnimationOwn.id);
+            },
+            child: const Text("BounceAnimationOwn"),
+          ),
+          MaterialButton(
+            color: Colors.black12,
+            onPressed: () {
+              Navigator.pushNamed(context, ThreeDflipOwn.id);
+            },
+            child: const Text("ThreeDflipOwn"),
+          ),
         ],
       ),
     );
