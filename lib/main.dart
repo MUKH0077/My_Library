@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:my_library/pages/home_page.dart';
 import 'package:my_library/pages/module_four/lesson_eight/basic_layout_own.dart';
 import 'package:my_library/pages/module_four/lesson_eight/bounce_animation_own.dart';
+import 'package:my_library/pages/module_four/lesson_eight/hinge_animation_own.dart';
 import 'package:my_library/pages/module_four/lesson_eight/lesson_eight_in_four.dart';
 import 'package:my_library/pages/module_four/lesson_eight/resize_pulse_own.dart';
 import 'package:my_library/pages/module_four/lesson_eight/slide_animation_own.dart';
+import 'package:my_library/pages/module_four/lesson_eight/task_first_in_eight.dart';
+import 'package:my_library/pages/module_four/lesson_eight/task_second_in_eight.dart';
 import 'package:my_library/pages/module_four/lesson_eight/three_d_flip_own.dart';
 import 'package:my_library/pages/module_four/lesson_seven/container_decoration_own.dart';
 import 'package:my_library/pages/module_four/lesson_seven/container_gradient_own.dart';
@@ -77,6 +80,9 @@ class MyApp extends StatelessWidget {
         SlideAnimationOwn.id: (context) => const SlideAnimationOwn(),
         BounceAnimationOwn.id: (context) => const BounceAnimationOwn(),
         ThreeDflipOwn.id: (context) => const ThreeDflipOwn(),
+        HingeAnimationOwn.id: (context) => const HingeAnimationOwn(),
+        TaskFirstInEight.id: (context) => const TaskFirstInEight(),
+        TaskSecondInEight.id: (context) => const TaskSecondInEight(),
       }
     );
   }

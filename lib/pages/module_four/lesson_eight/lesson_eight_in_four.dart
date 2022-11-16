@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:my_library/pages/module_four/lesson_eight/resize_pulse_own.dart';
 import 'package:my_library/pages/module_four/lesson_eight/slide_animation_own.dart';
+import 'package:my_library/pages/module_four/lesson_eight/task_first_in_eight.dart';
+import 'package:my_library/pages/module_four/lesson_eight/task_second_in_eight.dart';
 import 'package:my_library/pages/module_four/lesson_eight/three_d_flip_own.dart';
 
 import 'basic_layout_own.dart';
 import 'bounce_animation_own.dart';
+import 'hinge_animation_own.dart';
 
 class LessonEightInFour extends StatefulWidget {
   static const String id = "LessonEightInFour";
@@ -58,6 +61,27 @@ class _LessonEightInFourState extends State<LessonEightInFour> {
               Navigator.pushNamed(context, ThreeDflipOwn.id);
             },
             child: const Text("ThreeDflipOwn"),
+          ),
+          MaterialButton(
+            color: Colors.black12,
+            onPressed: () {
+              Navigator.pushNamed(context, HingeAnimationOwn.id);
+            },
+            child: const Text("HingeAnimationOwn"),
+          ),
+          MaterialButton(
+            color: Colors.black12,
+            onPressed: () {
+              Navigator.pushNamed(context, TaskFirstInEight.id);
+            },
+            child: const Text("TaskFirstInEight"),
+          ),
+          MaterialButton(
+            color: Colors.black12,
+            onPressed: () {
+              Navigator.pushNamed(context, TaskSecondInEight.id);
+            },
+            child: const Text("TaskSecondInEight"),
           ),
         ],
       ),
