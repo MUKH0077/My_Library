@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_library/pages/module_four/module_four_page.dart';
 
+import 'module_five/modul_five_page.dart';
+
 class HomePage extends StatefulWidget {
   static const String id = "HomePage";
   const HomePage({Key? key}) : super(key: key);
@@ -27,7 +29,14 @@ class _HomePageState extends State<HomePage> {
               Navigator.pushNamed(context, ModuleFourPage.id);
             },
             child: const Text("ModuleFourPage")
-          )
+          ),
+          MaterialButton(
+            color: Colors.amber,
+            onPressed: () {
+              Navigator.pushNamed(context, ModuleFivePage.id);
+            },
+            child: const Text ("ModuleFivePage"),
+          ),
         ],
 
       ),

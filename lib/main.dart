@@ -1,5 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:my_library/pages/home_page.dart';
+import 'package:my_library/pages/module_five/lesson_first/home_intro_newpage.dart';
+import 'package:my_library/pages/module_five/lesson_first/homepagenewintro.dart';
+import 'package:my_library/pages/module_five/lesson_first/intro_app_own.dart';
+import 'package:my_library/pages/module_five/lesson_first/lesson_first_in_five.dart';
+import 'package:my_library/pages/module_five/lesson_first/login_ui_own.dart';
+import 'package:my_library/pages/module_five/lesson_first/samsung_shop_ui_own.dart';
+import 'package:my_library/pages/module_five/lesson_first/task_intro_own.dart';
+import 'package:my_library/pages/module_five/lesson_first/task_one_in_five.dart';
+import 'package:my_library/pages/module_five/lesson_first/task_second_own.dart';
+import 'package:my_library/pages/module_five/lesson_first/user_interface.dart';
+import 'package:my_library/pages/module_five/modul_five_page.dart';
 import 'package:my_library/pages/module_four/lesson_eight/basic_layout_own.dart';
 import 'package:my_library/pages/module_four/lesson_eight/bounce_animation_own.dart';
 import 'package:my_library/pages/module_four/lesson_eight/hinge_animation_own.dart';
@@ -83,6 +94,18 @@ class MyApp extends StatelessWidget {
         HingeAnimationOwn.id: (context) => const HingeAnimationOwn(),
         TaskFirstInEight.id: (context) => const TaskFirstInEight(),
         TaskSecondInEight.id: (context) => const TaskSecondInEight(),
+        ModuleFivePage.id: (context) => const ModuleFivePage(),
+        LessonFirstInFive.id: (context) => const LessonFirstInFive(),
+        UserInterfaceOwn.id: (context) => const UserInterfaceOwn(),
+        LoginUiOwn.id: (context) => const LoginUiOwn(),
+        TaskOneOwn.id: (context) => const TaskOneOwn(),
+        SamsungShopUiOwn.id: (context) => const SamsungShopUiOwn(),
+        TaskSecondInFive.id: (context) => const TaskSecondInFive(),
+        IntroAppOwn.id: (context) => const IntroAppOwn(),
+        HomePageNewIntro.id: (context) => const HomePageNewIntro(),
+        TaskIntroOwn.id: (context) => const TaskIntroOwn(),
+        HomeIntroNewpage.id: (context) => const HomeIntroNewpage(),
+
       }
     );
   }
