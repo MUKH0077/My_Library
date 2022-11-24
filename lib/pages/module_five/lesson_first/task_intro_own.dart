@@ -4,7 +4,7 @@ import '../../../utils/Stings.dart';
 import 'home_intro_newpage.dart';
 
 class TaskIntroOwn extends StatefulWidget {
-  static const  String id = "TaskIntroOwn";
+  static const String id = "TaskIntroOwn";
   const TaskIntroOwn({Key? key}) : super(key: key);
 
   @override
@@ -12,7 +12,6 @@ class TaskIntroOwn extends StatefulWidget {
 }
 
 class _TaskIntroOwnState extends State<TaskIntroOwn> {
-
   PageController? _pageController;
   int currentIndex = 0;
 
@@ -44,71 +43,78 @@ class _TaskIntroOwnState extends State<TaskIntroOwn> {
             controller: _pageController,
             children: [
               makePage(
-                image: "assets/images/ic_images10.jpg",
-                title: Strings.stepOneTitle,
                 content: Strings.stepOneContent,
+                title: Strings.stepOneTitle,
+                image: "assets/images/ic_image_1.png",
               ),
               makePage(
-                image: "assets/images/ic_images11.jpg",
-                title: Strings.stepTwoTitle,
                 content: Strings.stepTwoContent,
+                title: Strings.stepTwoTitle,
+                image: "assets/images/ic_image_2.png",
               ),
               makePage(
-                image: "assets/images/ic_images13.jpeg",
-                title: Strings.stepThreeTitle,
                 content: Strings.stepThreeContent,
+                title: Strings.stepThreeTitle,
+                image: "assets/images/ic_image_3.png",
               ),
             ],
           ),
           Container(
+            height: 30,
             margin: const EdgeInsets.only(bottom: 60),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: _buildIndicator(),
+            child: Stack(
+              children: [
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: _buildIndicator(),
+                ),
+                currentIndex == 2
+                    ? Positioned(
+                        right: 30,
+                        bottom: 0,
+                        top: 0,
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.pushReplacementNamed(
+                                context, HomeIntroNewpage.id);
+                          },
+                          child: const Text(
+                            "Skip",
+                            style: TextStyle(color: Colors.green, fontSize: 17),
+                          ),
+                        ),
+                      )
+                    : const SizedBox.shrink(),
+              ],
             ),
-          ),
-        ],
-      ),
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.white,
-        title: Text("TaskIntroOwn"),
-        actions: [
-          GestureDetector(
-            onTap: () {
-              Navigator.pushReplacementNamed(context, HomeIntroNewpage.id);
-            },
           ),
         ],
       ),
     );
   }
 
-  Widget makePage({image, title, content}) {
-    return Container(
+  Widget makePage({content, title, image}) {
+    return Padding(
       padding: const EdgeInsets.only(left: 50, right: 50, bottom: 50),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Image.asset(image),
-              ),
-              Text(
-                title,
-                style: const TextStyle(color: Colors.green, fontSize: 30),
-              ),
-              const SizedBox(
-                height: 30,
-              ),
-              Text(
-                content,
-                style: const TextStyle(color: Colors.tealAccent, fontSize: 20),
-                textAlign: TextAlign.center,
-              ),
-            ],
+          Text(
+            title,
+            style: const TextStyle(color: Colors.green, fontSize: 30),
+          ),
+          const SizedBox(
+            height: 30,
+          ),
+          Text(
+            content,
+            style: const TextStyle(color: Colors.tealAccent, fontSize: 20),
+            textAlign: TextAlign.center,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Image.asset(image),
           ),
         ],
       ),
