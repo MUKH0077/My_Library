@@ -5,6 +5,7 @@ import 'package:my_library/pages/module_five/lesson_first/homepagenewintro.dart'
 import 'package:my_library/pages/module_five/lesson_first/intro_app_own.dart';
 import 'package:my_library/pages/module_five/lesson_first/lesson_first_in_five.dart';
 import 'package:my_library/pages/module_five/lesson_first/login_ui_own.dart';
+import 'package:my_library/pages/module_five/lesson_first/market_ui_own.dart';
 import 'package:my_library/pages/module_five/lesson_first/samsung_shop_ui_own.dart';
 import 'package:my_library/pages/module_five/lesson_first/task_intro_own.dart';
 import 'package:my_library/pages/module_five/lesson_first/task_one_in_five.dart';
@@ -105,6 +106,8 @@ class MyApp extends StatelessWidget {
         HomePageNewIntro.id: (context) => const HomePageNewIntro(),
         TaskIntroOwn.id: (context) => const TaskIntroOwn(),
         HomeIntroNewpage.id: (context) => const HomeIntroNewpage(),
+        MarketUiOwn.id: (context) => const MarketUiOwn(),
+
 
       }
     );

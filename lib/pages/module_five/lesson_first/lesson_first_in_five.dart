@@ -7,6 +7,7 @@ import 'package:my_library/pages/module_five/lesson_first/task_second_own.dart';
 import 'package:my_library/pages/module_five/lesson_first/user_interface.dart';
 
 import 'intro_app_own.dart';
+import 'market_ui_own.dart';
 
 class LessonFirstInFive extends StatefulWidget {
   static const String id = "LessonFirstInFive";
@@ -74,6 +75,13 @@ class _LessonFirstInFiveState extends State<LessonFirstInFive> {
               Navigator.pushNamed(context, TaskIntroOwn.id);
             },
             child: const Text("TaskIntroOwn"),
+          ),
+          MaterialButton(
+            color: Colors.black12,
+            onPressed: () {
+              Navigator.pushNamed(context, MarketUiOwn.id);
+            },
+            child: const Text("MarketUiOwn"),
           ),
       ],
       ),
