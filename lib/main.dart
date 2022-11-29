@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:my_library/pages/home_page.dart';
 import 'package:my_library/pages/module_five/lesson_first/home_intro_newpage.dart';
 import 'package:my_library/pages/module_five/lesson_first/homepagenewintro.dart';
+import 'package:my_library/pages/module_five/lesson_first/hotel_ui_own.dart';
 import 'package:my_library/pages/module_five/lesson_first/intro_app_own.dart';
 import 'package:my_library/pages/module_five/lesson_first/lesson_first_in_five.dart';
 import 'package:my_library/pages/module_five/lesson_first/login_ui_own.dart';
 import 'package:my_library/pages/module_five/lesson_first/market_ui_own.dart';
 import 'package:my_library/pages/module_five/lesson_first/samsung_shop_ui_own.dart';
 import 'package:my_library/pages/module_five/lesson_first/task_intro_own.dart';
+import 'package:my_library/pages/module_five/lesson_first/task_market_ui_own.dart';
 import 'package:my_library/pages/module_five/lesson_first/task_one_in_five.dart';
 import 'package:my_library/pages/module_five/lesson_first/task_second_own.dart';
 import 'package:my_library/pages/module_five/lesson_first/user_interface.dart';
@@ -107,6 +109,8 @@ class MyApp extends StatelessWidget {
         TaskIntroOwn.id: (context) => const TaskIntroOwn(),
         HomeIntroNewpage.id: (context) => const HomeIntroNewpage(),
         MarketUiOwn.id: (context) => const MarketUiOwn(),
+        TaskMarketUiOwn.id: (context) => const TaskMarketUiOwn(),
+        HotelUiOwn.id: (context) => const HotelUiOwn(),
 
 
       }
