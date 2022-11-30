@@ -9,6 +9,7 @@ import 'package:my_library/pages/module_five/lesson_first/user_interface.dart';
 
 import 'hotel_ui_own.dart';
 import 'intro_app_own.dart';
+import 'jnk_ui_own.dart';
 import 'market_ui_own.dart';
 
 class LessonFirstInFive extends StatefulWidget {
@@ -98,6 +99,13 @@ class _LessonFirstInFiveState extends State<LessonFirstInFive> {
               Navigator.pushNamed(context, HotelUiOwn.id);
             },
             child: const Text("HotelUiOwn"),
+          ),
+          MaterialButton(
+            color: Colors.black12,
+            onPressed: () {
+              Navigator.pushNamed(context, JnkUiOwn.id);
+            },
+            child: const Text("JnkUiOwn"),
           ),
       ],
       ),

@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -18,7 +18,7 @@ class _MarketUiOwnState extends State<MarketUiOwn> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.lightBlueAccent.shade400,
-        title: Text(
+        title: const Text(
           "Clothes Mlothes",
           style: TextStyle(
               color: Colors.orange,
@@ -45,10 +45,10 @@ class _MarketUiOwnState extends State<MarketUiOwn> {
       ),
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           child: Column(
             children: [
-              Container(
+              SizedBox(
                 height: 40,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
@@ -61,7 +61,7 @@ class _MarketUiOwnState extends State<MarketUiOwn> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               makeItem("assets/images/market_clothes/ic_imaj01.jpeg"),
@@ -90,7 +90,7 @@ class _MarketUiOwnState extends State<MarketUiOwn> {
     return AspectRatio(
       aspectRatio: 2.2 / 1,
       child: Container(
-        margin: EdgeInsets.only(right: 10),
+        margin: const EdgeInsets.only(right: 10),
         decoration: BoxDecoration(
           color: type ? Colors.grey.shade400 : Colors.white,
           borderRadius: BorderRadius.circular(20),
@@ -109,7 +109,7 @@ class _MarketUiOwnState extends State<MarketUiOwn> {
     return Container(
       height: 250,
       width: double.infinity,
-      margin: EdgeInsets.only(bottom: 20),
+      margin: const EdgeInsets.only(bottom: 20),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         image: DecorationImage(image: AssetImage(image), fit: BoxFit.cover),
@@ -117,12 +117,12 @@ class _MarketUiOwnState extends State<MarketUiOwn> {
           BoxShadow(
             color: Colors.grey.shade400,
             blurRadius: 10,
-            offset: Offset(0, 10),
+            offset: const Offset(0, 10),
           ),
         ],
       ),
       child: Container(
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           gradient: LinearGradient(
@@ -145,12 +145,14 @@ class _MarketUiOwnState extends State<MarketUiOwn> {
                 Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                      children: const [
                         Text("Sport Clothes",style: TextStyle(color: Colors.lightGreen,fontSize: 25,fontWeight: FontWeight.bold),),
                         SizedBox(height: 10,),
                         Text("Sneakers",style: TextStyle(color: Colors.lightGreen,fontSize: 19,fontWeight: FontWeight.bold),),
 
-                      ],),),
+                      ],
+                    ),
+                ),
                 Container(
                   width: 35,
                   height: 35,
@@ -164,7 +166,7 @@ class _MarketUiOwnState extends State<MarketUiOwn> {
                   ),
               ],
             ),
-            Text("100\$",style: TextStyle(color: Colors.white,fontSize: 25),),
+            const Text("100\$",style: TextStyle(color: Colors.white,fontSize: 25),),
           ],
         ),
       ),

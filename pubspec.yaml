@@ -29,5 +29,6 @@ flutter:
   assets:
     - assets/images/market_clothes/
     - assets/images/hotel/
+    - assets/images/jnk/
     - assets/images/
     - assets/images/cars/

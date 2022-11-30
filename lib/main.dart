@@ -4,6 +4,7 @@ import 'package:my_library/pages/module_five/lesson_first/home_intro_newpage.dar
 import 'package:my_library/pages/module_five/lesson_first/homepagenewintro.dart';
 import 'package:my_library/pages/module_five/lesson_first/hotel_ui_own.dart';
 import 'package:my_library/pages/module_five/lesson_first/intro_app_own.dart';
+import 'package:my_library/pages/module_five/lesson_first/jnk_ui_own.dart';
 import 'package:my_library/pages/module_five/lesson_first/lesson_first_in_five.dart';
 import 'package:my_library/pages/module_five/lesson_first/login_ui_own.dart';
 import 'package:my_library/pages/module_five/lesson_first/market_ui_own.dart';
@@ -111,6 +112,7 @@ class MyApp extends StatelessWidget {
         MarketUiOwn.id: (context) => const MarketUiOwn(),
         TaskMarketUiOwn.id: (context) => const TaskMarketUiOwn(),
         HotelUiOwn.id: (context) => const HotelUiOwn(),
+        JnkUiOwn.id: (context) => const JnkUiOwn(),
 
 
       }

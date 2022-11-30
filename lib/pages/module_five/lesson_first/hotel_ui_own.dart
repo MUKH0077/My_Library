@@ -12,7 +12,7 @@ class _HotelUiOwnState extends State<HotelUiOwn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade200,
+      backgroundColor: Colors.grey.shade100,
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -117,7 +117,7 @@ class _HotelUiOwnState extends State<HotelUiOwn> {
     return AspectRatio(
         aspectRatio: 1.4 / 1,
     child: Container(
-        margin: const EdgeInsets.only(right: 15),
+        margin: const EdgeInsets.symmetric(horizontal: 30),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         image: DecorationImage(
